@@ -1,0 +1,187 @@
+body{
+  font-family: sans-serif;
+  background-color :#064663;
+
+}
+.content
+{
+  margin: 2% 15% auto 15%;
+}
+.title{
+  margin: 0 0 -10PX 0;
+  color: white;
+  font-size:xx-large;
+  font-weight: bolder;
+  text-decoration: solid;
+  text-align: center;
+}
+
+.airplaneimage{
+  /* background-color: white; */
+  /* border-radiuss: 20%; */
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+input[type=checkbox]:checked,
+input[type=checkbox]:not(:checked)+label{
+    /* accent-color: #11b61f; */
+    background-color: rgb(139, 0, 0);
+    color: white;
+    padding: 7px;
+}
+
+input[type=checkbox]:checked + label{
+  background-color: green;
+  color: white;
+  pointer-events: none;
+}
+
+input[type=checkbox]{
+  width: 25px;
+  height: 25px;
+  left: -9999%;
+  position: absolute;
+}
+label{
+  /* display: inline-flex; */
+  padding: 5px;
+  /* margin: -10px; */
+  /* border: 1px solid white; */
+  border-radius: 25px;
+  /* align-items: center; */
+  text-align: center;
+  width: 25px;
+  cursor: pointer;
+  flex-grow: 0.07;
+
+}
+label:hover{
+  background-color: white !important;
+  color: black !important;
+}
+#reserved-list{
+  /* border: 1px solid black;
+  background-color: white; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#reserved-list input{
+border-radius: 5px;
+padding: 10px;
+margin: 2px;
+width: 200px;
+background-color: inherit;
+border: none;
+}
+
+#reserved-list input:focus{
+  outline: none !important;
+  border:1px solid red;
+  box-shadow: 0 0 10px #719ECE;
+  background-color: white;
+}
+
+.ticket-info{
+  border: 1px solid black; border-radius: 5px;
+  border-radius: 20px;
+  text-align: left;
+  margin: 10px;
+  padding: 10px;
+  background-color: #ffffff69;
+}
+.h2{
+  text-align: center;
+}
+#All-container{
+  /* margin: 2% 15% 2% 15%; */
+  border: 1px solid black;
+background-image: url(../pictures/backgroundSeat.png);
+object-fit: contain;
+background-repeat: no-repeat;
+background-size: cover;
+  
+}
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2px;
+}
+.a{
+    /* background-color:#dddddd; */
+    border: 1px white solid;
+    
+    /**/
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 50%, rgba(255, 255, 255, 0.5) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 0.5s ease-out;
+    /**/
+}
+.a:nth-child(2n){
+    /* background-color:#9ce491; */
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 50%, rgba(255, 255, 255, 0.5) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 0.5s ease-out;
+    }
+.a:hover{
+  background-color: hsla(0, 0%, 100%, 0.300);
+  background-position: left bottom;
+  /* animation-name: example; */
+}
+.btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+#btn{
+  width: 200px;
+  height: auto;
+  background-color: #ECB365;
+  color: black;
+  border: 1px solid black; border-radius: 10px;
+  font-size: 30px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+#btn:hover{
+  width: 220px;
+  /* background-color: green;
+  color: white; */
+  transition: width 0.5s ease-out;
+  /* transition: all 0.5s 0.5s ease-in-out; */
+  /*animation-name: flexing; 
+  animation-duration: 1.6s;
+  animation-iteration-count: 1;*/
+}
+#img{
+  width: 900px;
+}
+
+@media (max-width:800px){
+    .a{
+        /* width: fit-content; */
+        display: inline-block;
+        flex-direction: column;
+    }
+    label{
+      display: inline-block;
+    }
+    #img{
+      left: 0;
+      width: 100%;
+    }
+}
+.seperate{
+margin: 100px 0px 100px 0px;
+}
+/* @keyframes flexing{
+  from {background-color: rgba(0, 128, 0, 0.5);}
+  to {background-color: green;}
+  } */

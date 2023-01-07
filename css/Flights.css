@@ -1,0 +1,81 @@
+body{
+   margin: 0; 
+   /* background-color: #041C32; */
+   font-family: sans-serif;
+
+   background-image: url(../pictures/waiting-room2.png) ;
+   object-fit: contain;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+}
+/* main{
+} */
+.title
+{
+    width: 80%;
+    border: 1px solid gray;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 10% auto 10px auto;
+    box-shadow: inset 0 0 0 200px rgba(3, 20, 48, 0.86);
+    border: 1px solid black;
+    border-radius: 100px;
+    padding: 10px;
+    color: white;
+    font-weight: bolder;
+}
+#container{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 80%;
+    height: 350px;
+    /* padding: 10px; */
+    border: 1px solid gray;
+    text-align: center;
+    display: flex;
+    /**/
+    flex-direction: column;
+    margin: auto;
+    /* background-color: #064663; */
+    box-shadow: inset 0 0 0 200px rgba(0, 0, 0, 0.7);
+    border:1px solid black;
+    border-radius: 30px;
+}
+.p-container{
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    padding: 15px 0px 15px 0px;
+    border-bottom:1px solid white;
+    border-width: 10%;
+    color: white ;
+
+}
+.p-container:hover{
+    background-color: #ecb365;
+    color: black;
+}
+.span{
+    width: 300px;
+    
+}
+.p-container-sticky{
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    padding: 10px 0px 10px 0px;
+    /* border:1px solid white; */
+    color: white;
+    background-color: #064663;
+    
+}
+
+a{
+    color: #90FF52;
+    text-decoration: none;
+}
